@@ -1,0 +1,36 @@
+# ───────── Python build & cache ─────────
+__pycache__/
+*.py[cod]
+*.so
+
+# ───────── Virtual‑envs ─────────
+venv/
+.env/                 # if your venv lives in a folder called “.env”
+
+# ───────── IDE / editor files ─────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ───────── OS noise ─────────
+.DS_Store
+Thumbs.db
+
+# ───────── Runtime / local state ─────────
+state.json            # cat happiness DB (regenerated)
+coverage.xml
+*.log
+
+# ───────── Secrets / personal settings ─────────
+.env                  # your bot token and DB URL
+.env.*                # e.g., .env.prod, .env.local
+
+# ───────── Build / dist / Docker ─────────
+dist/
+build/
+*.egg-info/
+*.tar.gz
+
+# ───────── Node / front‑end (if any) ─────────
+node_modules/

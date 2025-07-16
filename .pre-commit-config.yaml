@@ -1,0 +1,20 @@
+repos:
+  # 1️⃣ Ruff – linter + import‑sorter
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.4.4          # pin the version
+    hooks:
+      - id: ruff
+        args: [--fix]     # auto‑apply safe fixes
+
+  # 2️⃣ Black – code formatter
+  - repo: https://github.com/psf/black
+    rev: 24.4.2
+    hooks:
+      - id: black
+
+  # 3️⃣ Tiny cleanup hooks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
